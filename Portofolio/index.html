@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maheza | Portfolio</title>
+
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CERTIFICATE LIGHTBOX
+    ====================================================== -->
+
+    <div
+        id="certificateLightbox"
+        class="certificate-lightbox"
+    >
+
+        <button
+            type="button"
+            class="certificate-close"
+            onclick="closeCertificate()"
+            aria-label="Close certificate"
+        >
+            ×
+        </button>
+
+        <img
+            id="certificateImage"
+            src=""
+            alt="Certificate"
+        >
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PROJECT IMAGE LIGHTBOX
+    ====================================================== -->
+
+    <div
+        id="projectLightbox"
+        class="project-lightbox"
+    >
+
+        <!-- CLOSE -->
+
+        <button
+            type="button"
+            class="lightbox-close"
+            onclick="closeGallery()"
+            aria-label="Close gallery"
+        >
+            ×
+        </button>
+
+
+        <!-- PREVIOUS -->
+
+        <button
+            type="button"
+            class="lightbox-nav lightbox-prev"
+            onclick="lightboxSlide(-1)"
+            aria-label="Previous screenshot"
+        >
+            ‹
+        </button>
+
+
+        <!-- IMAGE -->
+
+        <div class="lightbox-image-wrapper">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Project Screenshot"
+            >
+
+        </div>
+
+
+        <!-- NEXT -->
+
+        <button
+            type="button"
+            class="lightbox-nav lightbox-next"
+            onclick="lightboxSlide(1)"
+            aria-label="Next screenshot"
+        >
+            ›
+        </button>
+
+
+        <!-- CONTROLS -->
+
+        <div class="lightbox-controls">
+
+            <button
+                type="button"
+                onclick="zoomOut()"
+            >
+                −
+            </button>
+
+            <button
+                type="button"
+                onclick="resetZoom()"
+            >
+                Reset
+            </button>
+
+            <button
+                type="button"
+                onclick="zoomIn()"
+            >
+                +
+            </button>
+
+        </div>
+
+
+        <!-- COUNTER -->
+
+        <div class="lightbox-counter">
+
+            <span id="lightboxCurrent">
+                1
+            </span>
+
+            /
+
+            <span id="lightboxTotal">
+                8
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav>
+
+        <a
+            href="#home"
+            class="logo"
+        >
+            Maheza<span>.</span>
+        </a>
+
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#education">
+                    Education
+                </a>
+            </li>
+
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#certifications">
+                    Certifications
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content">
+
+            <span class="hello">
+                Hello, I'm
+            </span>
+
+
+            <h1>
+                Maheza
+            </h1>
+
+
+            <h2>
+                Information Systems Graduate
+            </h2>
+
+
+            <p>
+                Saya adalah lulusan S1 Sistem Informasi yang memiliki
+                ketertarikan pada teknologi informasi, pengolahan data,
+                database, dan pengembangan sistem.
+            </p>
+
+
+            <!-- HERO BUTTONS -->
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#projects"
+                    class="btn primary"
+                >
+                    View Projects
+                </a>
+
+                <a
+                    href="#contact"
+                    class="btn secondary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROFILE PHOTO
+        ================================================== -->
+        <div class="hero-image">
+
+            <div class="image-container">
+
+                <img
+                    src="assets/maheza.png"
+                    alt="Foto Maheza"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        id="about"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                01
+            </span>
+
+            <h2>
+                About Me
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+                Saya merupakan lulusan S1 Sistem Informasi dengan
+                ketertarikan pada teknologi informasi, database,
+                pengolahan data, dan pengembangan aplikasi.
+            </p>
+
+
+            <p>
+                Saya senang mempelajari teknologi baru dan membangun
+                solusi digital yang dapat membantu menyelesaikan
+                berbagai kebutuhan.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+
+    <section
+        id="education"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                02
+            </span>
+
+            <h2>
+                Education
+            </h2>
+
+        </div>
+
+
+
+        <!-- UNIVERSITY -->
+
+        <div class="education-card">
+
+            <div class="education-logo">
+
+                <img
+                    src="assets/educations/unama.png"
+                    alt="Logo Universitas Dinamika Bangsa"
+                >
+
+            </div>
+
+
+            <div class="education-content">
+
+                <div class="education-year">
+                    2022 — 2026
+                </div>
+
+
+                <h3>
+                    S1 Sistem Informasi
+                </h3>
+
+
+                <h4>
+                    Universitas Dinamika Bangsa Jambi
+                </h4>
+
+
+                <p>
+                    Mempelajari sistem informasi, database,
+                    analisis dan perancangan sistem, pengembangan
+                    aplikasi, serta teknologi informasi.
+                </p>
+
+
+                <div class="education-tags">
+
+                    <span>
+                        Information Systems
+                    </span>
+
+                    <span>
+                        Database
+                    </span>
+
+                    <span>
+                        Web Development
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<br>
+
+        <!-- HIGH SCHOOL -->
+
+        <div class="education-card">
+
+            <div class="education-logo">
+
+                <img
+                    src="assets/educations/smkn2.jpg"
+                    alt="Logo SMK Negeri 2 Kota Jambi"
+                >
+
+            </div>
+
+
+            <div class="education-content">
+
+                <div class="education-year">
+                    2019 — 2022
+                </div>
+
+
+                <h3>
+                    Multimedia
+                </h3>
+
+
+                <h4>
+                    SMK NEGERI 2 KOTA JAMBI
+                </h4>
+
+
+                <p>
+                    Mempelajari desain grafis, fotografi,
+                    videografi, animasi, pengolahan audio dan video,
+                    serta pengembangan konten multimedia.
+                </p>
+
+
+                <div class="education-tags">
+
+                    <span>
+                        Multimedia
+                    </span>
+
+                    <span>
+                        Animation
+                    </span>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section
+        id="experience"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                03
+            </span>
+
+            <h2>
+                Work Experience
+            </h2>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+
+                <div>
+
+                    <h3>
+                        CAD Operator/Computer Operator
+                    </h3>
+
+                    <h4>
+                        PT Global Teknik Multidesain
+                    </h4>
+
+                    <h0>
+                        Contract
+                    </h0>
+                </div>
+                <span class="experience-date">
+                    December 2025 - April 2026
+                </span>
+
+            </div>
+
+            <ul class="experience-list">
+
+                <li>
+                    Menyusun laporan proyek secara harian,
+                    mingguan, dan bulanan.
+                </li>
+
+                <li>
+                    Melakukan input, pengolahan, dan pengecekan
+                    data administrasi proyek.
+                </li>
+
+                <li>
+                    Mengelola dokumentasi dan arsip proyek.
+                </li>
+
+                <li>
+                    Membantu proses penyusunan laporan akhir proyek.
+                </li>
+
+                <li>
+                    Berkoordinasi dengan pihak terkait dalam
+                    pengumpulan data dan dokumen.
+                </li>
+
+            </ul>
+
+
+            <div class="experience-tags">
+
+                <span>
+                    Microsoft Word
+                </span>
+
+                <span>
+                    Microsoft Excel
+                </span>
+
+                <span>
+                    Data Entry
+                </span>
+
+                <span>
+                    Administration
+                </span>
+
+                <span>
+                    Reporting
+                </span>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+
+                <div>
+
+                    <h3>
+                        Staff Intern
+                    </h3>
+
+                    <h4>
+                        Yadi Percetakan
+                    </h4>
+
+                    <h0>
+                        Intern
+                    </h0>
+                </div>
+
+
+                <span class="experience-date">
+                    November 2021 - January 2022
+                </span>
+
+            </div>
+
+
+            <p class="experience-description">
+
+            </p>
+
+
+            <ul class="experience-list">
+
+                <li>
+                   Membantu proses operasional percetakan.
+                </li>
+
+                <li>
+                    Melakukan pengecekan hasil cetak dan memastikan pesanan sesuai dengan permintaan.
+                </li>
+
+                <li>
+                    Membantu mendesain kebutuhan percetakan sesuai permintaan pelanggan.
+                </li>
+
+                <li>
+                    Membantu melakukan revisi dan penyesuaian desain sebelum proses pencetakan.
+                </li>
+
+            </ul>
+
+
+            <div class="experience-tags">
+
+                <span>
+                    Adobe Photoshop
+                </span>
+
+                <span>
+                    CorelDraw
+                </span>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+
+                <div>
+
+                    <h3>
+                        Staff Intern
+                    </h3>
+
+                    <h4>
+                        Siginjai Photography Studio
+                    </h4>
+
+                    <h0>
+                        Intern
+                    </h0>
+                </div>
+
+
+                <span class="experience-date">
+                    January 2021 - April 2022
+                </span>
+
+            </div>
+
+
+            <p class="experience-description">
+
+            </p>
+
+
+            <ul class="experience-list">
+
+                <li>
+                   Membantu proses pemotretan untuk berbagai kebutuhan fotografi studio.
+                </li>
+
+                <li>
+                    Membantu mempersiapkan peralatan dan kebutuhan sebelum proses pemotretan.
+                </li>
+
+                <li>
+                    Mempelajari teknik dasar fotografi dan penggunaan peralatan fotografi.
+                </li>
+
+                <li>
+                    Mendukung kegiatan operasional studio selama proses pemotretan.
+                </li>
+
+            </ul>
+
+
+            <div class="experience-tags">
+
+                <span>
+                    Photography
+                </span>
+
+                <span>
+                    Camera Operation
+                </span>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section
+        id="skills"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                04
+            </span>
+
+            <h2>
+                Skills
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                HTML
+            </div>
+
+            <div class="skill">
+                CSS
+            </div>
+
+            <div class="skill">
+                JavaScript
+            </div>
+
+            <div class="skill">
+                PHP
+            </div>
+
+            <div class="skill">
+                Data Entry
+            </div>
+
+            <div class="skill">
+                MySQL
+            </div>
+
+            <div class="skill">
+                Microsoft Word
+            </div>
+
+            <div class="skill">
+                Microsoft Excel
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CERTIFICATIONS
+    ====================================================== -->
+
+    <section
+        id="certifications"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                05
+            </span>
+
+            <h2>
+                Certifications
+            </h2>
+
+        </div>
+
+
+        <div class="certifications-grid">
+
+
+            <!-- CERTIFICATE 1 -->
+
+            <article class="certificate-card">
+
+                <div class="certificate-icon">
+                    ✓
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <span class="certificate-year">
+                        2026
+                    </span>
+
+
+                    <h3>
+                        TOEFL
+                    </h3>
+
+
+                    <p>
+                        Universitas Dinamika Bangsa
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="certificate-link"
+                        onclick="openCertificate('assets/certificates/toefl.jpg')"
+                    >
+                        View Certificate →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CERTIFICATE 2 -->
+
+            <article class="certificate-card">
+
+                <div class="certificate-icon">
+                    ✓
+                </div>
+
+
+                <div class="certificate-content">
+
+                    <span class="certificate-year">
+                        2026
+                    </span>
+
+
+                    <h3>
+                        Information Technology Specialist – Databases
+                    </h3>
+
+
+                    <p>
+                        Certiport - A Pearson VUE Business
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="certificate-link"
+                        onclick="openCertificate('assets/certificates/database.jpg')"
+                    >
+                        View Certificate →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section
+        id="projects"
+        class="section reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                06
+            </span>
+
+            <h2>
+                Projects
+            </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- =================================================
+                 PROJECT 1
+            ================================================== -->
+
+            <article class="project-card">
+
+
+                <div class="project-gallery">
+
+                    <img
+                        src="assets/projects/studio-booking/01-home.jpg"
+                        alt="Studio Booking System Screenshot"
+                        class="gallery-image"
+                        onclick="openGallery(this)"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-btn prev"
+                        onclick="changeSlide(this, -1)"
+                        aria-label="Previous screenshot"
+                    >
+                        ‹
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gallery-btn next"
+                        onclick="changeSlide(this, 1)"
+                        aria-label="Next screenshot"
+                    >
+                        ›
+                    </button>
+
+
+                    <div class="gallery-counter">
+
+                        <span class="current-slide">
+                            1
+                        </span>
+
+                        /
+
+                        <span class="total-slide">
+                            8
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-body">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Studio Booking System
+                    </h3>
+
+
+                    <p>
+                        Sistem booking studio berbasis web yang
+                        memungkinkan pengguna melakukan pemesanan
+                        studio dan pengelolaan jadwal secara lebih
+                        terstruktur.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>
+                            Laravel
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                        <span>
+                            Blade
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 2
+            ================================================== -->
+
+            <article class="project-card">
+
+
+                <div class="project-gallery">
+
+                    <img
+                        src="assets/projects/printing-service/01-home.jpg"
+                        alt="Printing Service Ordering System Screenshot"
+                        class="gallery-image"
+                        onclick="openGallery(this)"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="gallery-btn prev"
+                        onclick="changeSlide(this, -1)"
+                        aria-label="Previous screenshot"
+                    >
+                        ‹
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gallery-btn next"
+                        onclick="changeSlide(this, 1)"
+                        aria-label="Next screenshot"
+                    >
+                        ›
+                    </button>
+
+
+                    <div class="gallery-counter">
+
+                        <span class="current-slide">
+                            1
+                        </span>
+
+                        /
+
+                        <span class="total-slide">
+                            8
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-body">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Printing Service Ordering System
+                    </h3>
+
+
+                    <p>
+                        Sistem pemesanan jasa percetakan berbasis web
+                        yang membantu pengguna memilih layanan,
+                        melakukan pemesanan, dan mengelola proses
+                        pesanan secara digital.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>
+                            Laravel
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                        <span>
+                            Blade
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section
+        id="contact"
+        class="section contact reveal"
+    >
+
+        <div class="section-title">
+
+            <span>
+                07
+            </span>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+        </div>
+
+
+        <p>
+            Tertarik untuk bekerja sama atau ingin mengetahui
+            lebih lanjut tentang saya?
+        </p>
+
+
+        <div class="contact-links">
+
+            <a href="mailto:mahezamuhammad@gmail.com">
+                Email
+            </a>
+
+
+            <a
+                href="https://github.com/username"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/muhammad-maheza-caesareo-18b8a2404 "
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Maheza. Built with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
