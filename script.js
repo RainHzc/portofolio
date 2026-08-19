@@ -39,14 +39,14 @@ const projectGalleries = {
     ],
 
     "Printing Service Ordering System": [
-        "assets/projects/printing-service/01-home.jpg",
-        "assets/projects/printing-service/02-login.jpg",
-        "assets/projects/printing-service/03-services.jpg",
-        "assets/projects/printing-service/04-order.jpg",
-        "assets/projects/printing-service/05-payment.jpg",
-        "assets/projects/printing-service/06-status.jpg",
-        "assets/projects/printing-service/07-admin.jpg",
-        "assets/projects/printing-service/08-report.jpg"
+        "assets/projects/printing-service/01-home.png",
+        "assets/projects/printing-service/02-login.png",
+        "assets/projects/printing-service/03-services.png",
+        "assets/projects/printing-service/04-order.png",
+        "assets/projects/printing-service/05-payment.png",
+        "assets/projects/printing-service/06-status.png",
+        "assets/projects/printing-service/07-admin.png",
+        "assets/projects/printing-service/08-report.png"
     ]
 
 };
